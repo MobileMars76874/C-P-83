@@ -15,8 +15,8 @@ width = document.getElementById("W").value;
 
 canvas.addEventListener("touchmove", my_touchmove);
 function my_touchmove(e){
-current_x = e.touch[0].clientX - canvas.offsetLeft;
-current_y = e.touch[0].clientY - canvas.offsetTop;
+current_x = e.touches[0].clientX - canvas.offsetLeft;
+current_y = e.touches[0].clientY - canvas.offsetTop;
 ctx.beginPath();
 ctx.strokeStyle = color;
 ctx.lineWidth = width;

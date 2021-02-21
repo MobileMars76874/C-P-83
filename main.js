@@ -20,8 +20,8 @@ function my_touchstart(e)
   
 color = document.getElementById("C").value;
 width_of_line = document.getElementById("W").value;
-      
-
+ctx.strokeStyle = color;
+ctx.lineWidth = width_of_line;
 touchEvent = "touchstart";
 }
 
